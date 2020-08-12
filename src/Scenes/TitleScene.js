@@ -20,12 +20,6 @@ export default class TitleScene extends Phaser.Scene {
         );
     }
 
-    preload() {
-        this.load.image('box', 'src/assets/ui/grey_box.png');
-        this.load.image('checkedBox', 'src/assets/ui/blue_boxCheckmark.png');
-        this.load.audio('bgMusic', ['src/assets/TownTheme.mp3']);
-    }
-
     create() {
         // Game
         this.gameButton = this.add.sprite(100, 200, 'blueButton1').setInteractive();
